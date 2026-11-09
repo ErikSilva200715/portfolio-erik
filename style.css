@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #02ccbf;
+    --cor-houver: #272727;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo_destaque{
+    color: var(--cor-terciaria);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-houver);
+    color: var(--cor-secundaria);
+}
+
+main{
+    flex: 1;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho{
+    padding: 2% 15% 0 15%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cabecalho_menu_links{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* ---------- Apresentação (home e quem sou) ---------- */
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 15%;
+    gap: 5%;
+}
+
+.apresentacao_conteudo{
+    flex: 1;
+    max-width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.apresentacao_conteudo_titulo{
+    color: var(--cor-terciaria);
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao_conteudo_subtitulo{
+    color: var(--cor-terciaria);
+    font-size: 1.3rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao_conteudo_texto{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_conteudo h3{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+}
+
+/* ---------- Botões de redes sociais ---------- */
+.apresentacao_links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.apresentacao_links_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 16px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links_link img{
+    width: 32px;
+    height: 32px;
+}
+
+.apresentacao_links_link:hover{
+    background-color: rgba(2, 204, 191, 0.15);
+}
+
+/* ---------- Foto e vídeo ---------- */
+.minha_foto{
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.apresentacao_video{
+    width: 380px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid var(--cor-terciaria);
+}
+
+/* ---------- Página de projetos ---------- */
+.projetos{
+    margin: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.projetos_lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projeto_card{
+    width: 340px;
+    max-width: 100%;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: var(--fonte-secundaria);
+}
+
+.projeto_card h2{
+    color: var(--cor-terciaria);
+    font-size: 1.2rem;
+}
+
+.projeto_card p{
+    line-height: 1.5;
+}
+
+.projeto_card img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.projeto_foto{
+    padding: 0;
+    overflow: hidden;
+    min-height: 220px;
+}
+
+.projeto_foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* ---------- Sobre o projeto ---------- */
+.projeto_detalhes{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projeto_detalhes_titulo{
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.projeto_detalhes_lista{
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.projeto_tecnologias{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.projeto_tecnologias li{
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 999px;
+    padding: 6px 18px;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape{
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* ---------- Página de contato ---------- */
+.contato{
+    margin: 5% 15%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: var(--fonte-secundaria);
+}
+
+.formulario label{
+    font-weight: 600;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    width: 100%;
+    padding: 14px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 12px;
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+}
+
+.formulario select option{
+    background-color: var(--cor-houver);
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus{
+    outline: none;
+    background-color: rgba(2, 204, 191, 0.1);
+}
+
+.formulario_botoes{
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.botao{
+    padding: 14px 32px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 12px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-houver);
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    color: var(--cor-terciaria);
+}
+
+.botao:hover{
+    opacity: 0.85;
+}
+
+/* ---------- Celular e telas menores ---------- */
+@media (max-width: 900px){
+    .cabecalho{
+        padding: 20px 5% 0 5%;
+    }
+    .cabecalho_menu{
+        gap: 10px;
+    }
+    .cabecalho_menu_links{
+        font-size: 1rem;
+    }
+    .apresentacao{
+        flex-direction: column;
+        margin: 30px 5%;
+        gap: 30px;
+    }
+    .apresentacao_conteudo{
+        max-width: 100%;
+    }
+    .apresentacao_conteudo_titulo{
+        font-size: 1.5rem;
+    }
+    .projetos{
+        margin: 30px 5%;
+    }
+    .contato{
+        margin: 30px 5%;
+    }
+}
